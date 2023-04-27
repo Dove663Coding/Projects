@@ -1,0 +1,158 @@
+/*App Position*/
+.App {
+  text-align: center;
+
+}
+/*Background customization*/
+body{
+  
+  background-color: rebeccapurple;
+}
+
+/*Input Bar customization*/
+input {
+  padding: 4px;
+  margin-right: 8px;
+}
+
+/*Title Text*/
+h1{
+  background-color: grey;
+  border-radius: 10px;
+  margin-right: 20%;
+  margin-left: 20%;
+  padding-top: 10px;
+  padding-bottom: 10px;
+  color: white;
+}
+
+/*List Box*/
+ul{
+  opacity: 0.8;
+  background-color: grey;
+  list-style: none;
+  padding: 10px;
+  margin-left: 10%;
+  margin-right: 10%;
+  border-radius: 20px;
+ 
+}
+
+/*List contents*/
+li {
+  margin: 12px 0;
+  background-color: lightgray;
+  border-radius: 20px;
+  padding-top: 10px;
+  padding-bottom: 10px;
+}
+
+/*When the mouse hover over the Add button*/
+.addButton:hover {
+ -color: gray;
+ cursor: pointer;
+}
+
+
+
+
+/*Delete button customization*/
+.delete-button{
+  font-size: 20px;
+  margin-left: 8px;
+  top: 200px;
+  border: none;
+  background-color: red;
+  color: white;
+  border-radius: 4px;
+
+  padding-top: 5px;
+  padding-bottom: 2px;
+  padding-left: 8px;
+  padding-right: 8px;
+
+}
+/*When the mouse hover the delete button*/
+.delete-button:hover{
+  cursor: pointer;
+  background-color: brown;
+}
+
+
+
+
+
+/* Customize the label (the container) */
+.container {
+ 
+  position: relative;
+  padding-left: 15px;
+  margin-bottom: 12px;
+  margin-left: 15px;
+  cursor: pointer;
+  font-size: 22px;
+
+}
+
+/* Hide the default checkbox */
+.container input {
+  position: absolute;
+  opacity: 0;
+  cursor: pointer;
+  height: 0;
+  width: 0;
+}
+
+/* Creates a custom checkbox */
+.checkmark {
+  position: absolute;
+  top: 0;
+  left: 0;
+  margin-top: 1px;
+  height: 30px;
+  width: 28px;
+  border-radius: 4px;
+  background-color: #eee;
+}
+
+/* Checkbox customization */
+.container input:checked ~ .checkmark {
+  background-color: green;
+}
+
+/* When the mouse hovers over the check button */
+.container:hover input ~ .checkmark {
+  background-color: darkgreen;
+}
+
+
+
+
+/* Create the checkmark symbol (hidden) */
+.checkmark:after {
+  content: "";
+  position: absolute;
+  margin-left: 2px;
+  display: none;
+}
+
+/* Show the checkmark when checked */
+.container input:checked ~ .checkmark:after {
+  display: block;
+}
+
+
+/* Style the custom checkmark */
+.container .checkmark:after {
+  left: 9px;
+  top: 5px;
+  width: 5px;
+  height: 15px;
+  border: solid white;
+  border-width: 0 3px 3px 0;
+  -webkit-transform: rotate(45deg);
+  -ms-transform: rotate(45deg);
+  transform: rotate(45deg);
+}
+
+

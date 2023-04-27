@@ -1,0 +1,76 @@
+/*Size of Box*/
+*, *::before, *::after {
+box-sizing: border-box;
+
+}
+/*Background*/
+body{
+  margin: 0;
+  background: linear-gradient(to right, #00AAFF, #FF00AA);
+}
+/*Title Box*/
+.title{
+  text-align: center;
+  font-family: sans-serif;
+  padding: 10px;
+  font-size: 20px;
+}
+
+/*Title Text*/
+.title h1{
+  color: white;
+}
+/*Calculator Grid customization*/
+.calculator-grid{
+
+  display: grid;
+  margin-top: 40px;
+  justify-content: center;
+  grid-template-columns: repeat(4, 95px);
+  grid-template-rows: minmax(7rem, auto) repeat((5, 95px));
+}
+/*Button customization*/
+.calculator-grid > button {
+ cursor: pointer;
+ font-size: 35px;
+ border: 1px solid white;
+ outline:  none;
+ background-color: rgba(255,255,255,.75);
+}
+
+/*When the mouse hovers over the buttons*/
+.calculator-grid > button:hover,
+.calculator-grid > button:focus {
+  background-color: rgba(255,255,255,.9);
+}
+/*Double the size of certain buttons*/
+.span-two {
+
+  grid-column: span 2;
+}
+
+/*Output Window*/
+.output {
+
+  grid-column: 1/ -1;
+  background-color:  rgba(0,0,0,.75);
+  display: flex;
+  flex-direction: column;
+  align-items:  flex-end;
+  justify-content: space-around;
+  padding: 10px;
+  word-wrap: break-word;
+  word-break: break-all;
+  height: 80px;
+}
+/*Previous Input*/
+.output .previous-operand{
+  color: rgba(255,255,255,.75);
+  font-size: 22.5px;
+
+}
+/*Current Input*/
+.output .current-operand{
+  color: white;
+  font-size: 40px;
+}
